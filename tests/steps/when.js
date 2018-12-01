@@ -126,15 +126,15 @@ const viaHttp = async (relPath, method, opts) => {
     }
 }
 
-// const we_invoke_get_index = () => viaHandler({}, 'get-index')
-const we_invoke_get_index = async () => {
-    const res =
-        mode === 'handler'
-            ? await viaHandler({}, 'get-index')
-            : await viaHttp('', 'GET')
-
-    return res
-}
+const we_invoke_get_index = () => viaHandler({}, 'get-index')
+// const we_invoke_get_index = async () => {
+//     const res =
+//         mode === 'handler'
+//             ? await viaHandler({}, 'get-index')
+//             : await viaHttp('', 'GET')
+//
+//     return res
+// }
 
 const we_invoke_get_restaurants = () => viaHandler({}, 'get-restaurants')
 const we_invoke_search_restaurants = theme => {
